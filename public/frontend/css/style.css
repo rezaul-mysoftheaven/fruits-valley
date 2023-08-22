@@ -1,0 +1,206 @@
+/* Front End Css */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+header{
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/* Image container with fixed height and flexbox properties */
+.image-container {
+    height: 200px; /* Set the fixed height for the image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflowing content beyond the set height */
+}
+
+/* Image inside the container */
+.image-container img {
+    width: 100%; /* The image will take the full width of the container */
+    height: 100%; /* The image will take the full height of the container */
+    object-fit: contain; /* Show the entire image without cropping */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.b {
+    right: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.fruit-image img {
+    max-height: 200px;
+    /* Set the maximum height for the image */
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.me-4 {
+    margin-right: 4rem;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* Added 'right' property to adjust the position of the badge */
+    background-color: #dc3545;
+    color: #fff;
+    padding: 3px;
+}
+
+/* Add this custom CSS to make the navbar sticky */
+/* .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} */
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+/* Cart icon design */
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+    /* User name style */
+    .user-name {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .user-name:hover {
+        color: #007bff; /* Change the color on hover for interactivity */
+    }
+    
+    .user-name .fa-user {
+        margin-right: 5px;
+    }
+    
+    .user-text {
+        font-weight: bold;
+    }
+    
+    .user-name .fa-user,
+    .user-text {
+        transition: color 0.3s ease; /* Add a smooth transition on color change */
+    }
+
+    /* Icon Style */
+
+    .cart-icon {
+        position: relative;
+        margin-right: 15px;
+        font-size: 24px; /* Increase the cart icon size */
+    }
+
+    .cart-count-box {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: red; /* Customize the background color for the cart count box */
+        color: #fff; /* Customize the text color for the cart count box */
+        font-size: 10px; /* Reduce the font size for the cart count badge */
+        padding: 2px 5px; /* Reduce the padding for the cart count badge */
+        border-radius: 50%;
+    }
+
